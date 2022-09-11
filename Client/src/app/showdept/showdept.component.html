@@ -1,0 +1,21 @@
+<div class="container">
+  <h4 class="text-success">Department Listing</h4>
+  <div class="jumbotron">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Department Name</th>
+          <th>Department Count</th>
+          <th>Department Total Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dept of deptlist">
+          <td>{{ dept.name }}</td>
+          <td>{{ dept.count }}</td>
+          <td>{{ dept.totalSalary }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
